@@ -12734,11 +12734,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "G:\\Jitendra\\DotNetCore\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectUniqueName": "G:\\Study\\DotNetCore\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
       "projectName": "EmployeeManagement",
-      "projectPath": "G:\\Jitendra\\DotNetCore\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
+      "projectPath": "G:\\Study\\DotNetCore\\EmployeeManagement\\EmployeeManagement\\EmployeeManagement.csproj",
       "packagesPath": "C:\\Users\\Jitendra\\.nuget\\packages\\",
-      "outputPath": "G:\\Jitendra\\DotNetCore\\EmployeeManagement\\EmployeeManagement\\obj\\",
+      "outputPath": "G:\\Study\\DotNetCore\\EmployeeManagement\\EmployeeManagement\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
