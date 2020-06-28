@@ -1,0 +1,28 @@
+﻿@model Employee
+
+@{
+    ViewData["Title"] = "Details";
+    var photoPath = "~/images/" + (Model.PhotoPath ?? "no_image.jpeg");
+}
+<div class="row justify-content-center m-3">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header">
+                <h1>@Model.Name</h1>
+            </div>
+            <div class="card-body text-center">
+                <img class="card-img-top" src="@photoPath" asp-append-version="true" />
+
+                <h4>Employee ID : @Model.Id</h4>
+                <h4>Name : @Model.Name</h4>
+                <h4>Email : @Model.Email</h4>
+                <h4>Department : @Model.Department</h4>
+            </div>
+            <div class="card-footer text-center">
+                <a asp-action="index" asp-controller="employee" class="btn btn-primary m-1">Back</a>
+                <a asp-action="edit" asp-controller="employee" asp-route-id="@Model.Id" class="btn btn-primary m-1">Edit</a>
+                <a href="#" class="btn btn-primary m-1">Delete</a>
+            </div>
+        </div>
+    </div>
+</div>
