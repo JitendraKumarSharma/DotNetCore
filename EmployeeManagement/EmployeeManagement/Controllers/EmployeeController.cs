@@ -34,7 +34,14 @@ namespace EmployeeManagement.Controllers
         [Route("[action]/{id?}")]
         public IActionResult Details(int? id)
         {
-            var emp = _employeeRepository.GetEmployeeById(id ?? 1);
+            throw new Exception("Error from details view");
+            Employee employee = _employeeRepository.GetEmployeeById(id.Value);
+            if(employee==null)
+            {
+                Response.StatusCode = 404;
+                return View("EmployeeNotFound", id.Value);
+            }
+            var emp = employee;
             return View(emp);
         }
 

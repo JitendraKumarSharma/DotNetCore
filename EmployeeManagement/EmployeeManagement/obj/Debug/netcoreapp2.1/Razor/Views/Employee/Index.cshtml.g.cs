@@ -89,7 +89,7 @@ using EmployeeManagement.ViewModels;
             WriteLiteral("</h3>\r\n            </div>\r\n            ");
             EndContext();
             BeginContext(481, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "95cbd548aad747cfb76ccfce0c845636", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "3b6a36ce55d441cc80805e048c90e3b6", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper>();
@@ -122,7 +122,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("\r\n            <div class=\"card-footer text-center\">\r\n                ");
             EndContext();
             BeginContext(636, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "db07b86b890a4d5cbc1d213158b7bb42", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "c87cd2810d2d42f88a93ba9c15e96485", async() => {
                 BeginContext(733, 4, true);
                 WriteLiteral("View");
                 EndContext();
@@ -160,7 +160,7 @@ __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper.AppendVersion = true;
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(759, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a79783f7759046279ac66ac6100a4d07", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "e45e688cff1f49fd94b28c055d761e28", async() => {
                 BeginContext(853, 4, true);
                 WriteLiteral("Edit");
                 EndContext();

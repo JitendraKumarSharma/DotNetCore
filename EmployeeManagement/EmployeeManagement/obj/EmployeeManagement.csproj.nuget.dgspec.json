@@ -65,6 +65,10 @@
             "Microsoft.Web.LibraryManager.Build": {
               "target": "Package",
               "version": "[2.1.76, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.2, )"
             }
           },
           "imports": [

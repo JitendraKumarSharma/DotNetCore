@@ -72,7 +72,6 @@ G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.Views.pdb
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.AssemblyInfoInputs.cache
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.AssemblyInfo.cs
-G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csproj.CoreCompileInputs.cache
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.RazorAssemblyInfo.cache
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.RazorAssemblyInfo.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.TagHelpers.input.cache
@@ -81,8 +80,10 @@ G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Create.cshtml.g.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Details.cshtml.g.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Edit.cshtml.g.cs
+G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\EmployeeNotFound.cshtml.g.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Index.cshtml.g.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\_ViewStart.cshtml.g.cs
+G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Shared\NotFound.cshtml.g.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\_ViewImports.cshtml.g.cs
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\_ViewStart.cshtml.g.cs
@@ -93,3 +94,7 @@ G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.pdb
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.genruntimeconfig.cache
 G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csproj.CopyComplete
+G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csprojAssemblyReference.cache
+G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Shared\Error.cshtml.g.cs
+G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\nlog.config
+G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csproj.CoreCompileInputs.cache

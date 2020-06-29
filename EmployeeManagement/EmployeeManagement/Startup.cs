@@ -48,13 +48,14 @@ namespace EmployeeManagement
             }
             else
             {
-                app.UseExceptionHandler("/Home/Error");
-                app.UseHsts();
+                app.UseExceptionHandler("/Error");
+                app.UseStatusCodePagesWithReExecute("/Error/{0}");
+                //app.UseStatusCodePages(); // Show default error page.
             }
 
-            app.UseHttpsRedirection();
+            //app.UseHttpsRedirection();
             app.UseStaticFiles();
-            app.UseCookiePolicy();
+            //app.UseCookiePolicy();
 
             app.UseMvc(routes =>
             {
