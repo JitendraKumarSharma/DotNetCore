@@ -136,3 +136,4 @@ D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netc
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.genruntimeconfig.cache
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csproj.CopyComplete
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csprojAssemblyReference.cache
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs

@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -35,6 +36,10 @@ namespace EmployeeManagement
 
             services.AddDbContextPool<AppDBContext>(
                 option => option.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
+
+            services.AddIdentity<IdentityUser, IdentityRole>()
+                    .AddEntityFrameworkStores<AppDBContext>();
+
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
@@ -56,6 +61,8 @@ namespace EmployeeManagement
             //app.UseHttpsRedirection();
             app.UseStaticFiles();
             //app.UseCookiePolicy();
+
+            app.UseAuthentication();
 
             app.UseMvc(routes =>
             {
