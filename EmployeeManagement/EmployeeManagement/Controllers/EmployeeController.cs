@@ -5,14 +5,16 @@ using System.Linq;
 using System.Threading.Tasks;
 using EmployeeManagement.Models;
 using EmployeeManagement.ViewModels;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 
 namespace EmployeeManagement.Controllers
 {
-    [Route("jeet")]
-    [Route("jeet/[controller]")]
+    //[Route("jeet")]
+    //[Route("jeet/[controller]")]
+    [Route("[controller]")]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -25,16 +27,17 @@ namespace EmployeeManagement.Controllers
             _hostingEnvironment = hostingEnvironment;
             _logger = logger;
         }
-        [Route("")]
-        [Route("~/")]
+        //[Route("")]
+        //[Route("~/")]
         [Route("[action]")]
-
+        [AllowAnonymous]
         public IActionResult Index()
         {
             var emplist = _employeeRepository.GetAllEmployee();
             return View(emplist);
         }
         [Route("[action]/{id?}")]
+        [AllowAnonymous]
         public IActionResult Details(int? id)
         {
             //throw new Exception("Error from details view");
@@ -81,7 +84,8 @@ namespace EmployeeManagement.Controllers
             return View();
         }
 
-        [Route("[action]")]
+        
+        //[Route("[action]")]
         public ViewResult Edit(int id)
         {
             Employee employee = _employeeRepository.GetEmployeeById(id);
@@ -97,7 +101,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpPost]
-        [Route("[action]")]
+        //[Route("[action]")]
         public IActionResult Edit(EmployeeEditViewModel model)
         {
             if (ModelState.IsValid)

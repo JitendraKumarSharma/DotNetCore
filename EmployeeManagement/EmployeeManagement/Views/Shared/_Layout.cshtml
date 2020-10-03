@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@inject SignInManager<IdentityUser>  signInManager;
+<!DOCTYPE html>
 <html>
 <head>
     <title>@ViewData["Title"] - EmployeeManagement</title>
@@ -67,9 +68,23 @@
                     </li>
                 </ul>
                 <ul class="navbar-nav float-right">
-                    <li class="nav-item">
-                        <a class="nav-link" asp-action="register" asp-controller="account">Register</a>
-                    </li>
+                    @if (signInManager.IsSignedIn(User))
+                    {
+                        <li class="nav-item">
+                            <form method="post" asp-action="logout" asp-controller="account">
+                                <button type="submit" class="nav-link btn btn-link" style="width:auto;text-decoration:none">Logout @User.Identity.Name</button>
+                            </form>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="register" asp-controller="account">Register</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="login" asp-controller="account">Login</a>
+                        </li>
+                    }
                 </ul>
             </div>
         </nav>
