@@ -41,7 +41,7 @@ namespace EmployeeManagement
                 option => option.UseSqlServer(_config.GetConnectionString("EmployeeDBConnection")));
 
             #region Settings for password
-            services.AddIdentity<IdentityUser, IdentityRole>(
+            services.AddIdentity<ApplicationUser, IdentityRole>(
                 options =>
             {
                 options.Password.RequiredLength = 3;
