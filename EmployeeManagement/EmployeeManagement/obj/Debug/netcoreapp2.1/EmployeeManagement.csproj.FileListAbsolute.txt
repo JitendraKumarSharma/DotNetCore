@@ -101,6 +101,7 @@ G:\Study\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\nlog.config
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\appsettings.Development.json
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\appsettings.json
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\libman.json
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\Properties\launchSettings.json
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.deps.json
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\bin\Debug\netcoreapp2.1\EmployeeManagement.runtimeconfig.json
@@ -117,6 +118,8 @@ D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netc
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.TagHelpers.input.cache
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.TagHelpers.output.cache
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.RazorCoreGenerate.cache
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Create.cshtml.g.cs
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Details.cshtml.g.cs
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Employee\Edit.cshtml.g.cs
@@ -135,6 +138,3 @@ D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netc
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.pdb
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.genruntimeconfig.cache
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csproj.CopyComplete
-D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csprojAssemblyReference.cache
-D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Account\Register.cshtml.g.cs
-D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Account\Login.cshtml.g.cs

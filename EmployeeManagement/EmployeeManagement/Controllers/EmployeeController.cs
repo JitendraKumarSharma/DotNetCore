@@ -14,7 +14,7 @@ namespace EmployeeManagement.Controllers
 {
     //[Route("jeet")]
     //[Route("jeet/[controller]")]
-    [Route("[controller]")]
+    //[Route("[controller]")]
     public class EmployeeController : Controller
     {
         private readonly IEmployeeRepository _employeeRepository;
@@ -27,16 +27,22 @@ namespace EmployeeManagement.Controllers
             _hostingEnvironment = hostingEnvironment;
             _logger = logger;
         }
+
+        public static int fun(int x)
+        {
+            byte y = (byte)x;
+            return y;
+        }
         //[Route("")]
         //[Route("~/")]
-        [Route("[action]")]
+        //[Route("[action]")]
         [AllowAnonymous]
         public IActionResult Index()
         {
             var emplist = _employeeRepository.GetAllEmployee();
             return View(emplist);
         }
-        [Route("[action]/{id?}")]
+        //[Route("[action]/{id?}")]
         [AllowAnonymous]
         public IActionResult Details(int? id)
         {
@@ -57,14 +63,14 @@ namespace EmployeeManagement.Controllers
             return View(emp);
         }
 
-        [Route("[action]")]
+        //[Route("[action]")]
         public ViewResult Create()
         {
             return View();
         }
 
         [HttpPost]
-        [Route("[action]")]
+        //[Route("[action]")]
         public IActionResult Create(EmployeeCreateViewModel model)
         {
             if (ModelState.IsValid)

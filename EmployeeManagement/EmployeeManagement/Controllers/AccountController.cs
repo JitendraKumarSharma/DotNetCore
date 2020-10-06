@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace EmployeeManagement.Controllers
 {
     //[Route("jeet")]
-    //[Route("jeet/[controller]")]
+    //[Route("[controller]")]
     public class AccountController : Controller
     {
         private readonly UserManager<IdentityUser> _userManager;
@@ -24,6 +24,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpGet]
+        //[Route("[action]")]
         [AllowAnonymous]
         public IActionResult Register()
         {
@@ -31,6 +32,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpPost]
+        //[Route("[action]")]
         [AllowAnonymous]
         public async Task<IActionResult> Register(RegisterViewModel model)
         {
@@ -54,6 +56,7 @@ namespace EmployeeManagement.Controllers
         }
 
         [HttpPost]
+        //[Route("[action]")]
         public async Task<IActionResult> Logout()
         {
             await _signInManager.SignOutAsync();
@@ -96,6 +99,23 @@ namespace EmployeeManagement.Controllers
                 ModelState.AddModelError(string.Empty, "Invalid Login Attempt");
             }
             return View(model);
+        }
+
+        //[HttpGet][HttpPost]
+        //--OR--
+        [AcceptVerbs("Get","Post")]
+        [AllowAnonymous]
+        public async Task<IActionResult> IsEmailInUse(string email)
+        {
+            var user = await _userManager.FindByEmailAsync(email);
+            if(user==null)
+            {
+                return Json(true);
+            }
+            else
+            {
+                return Json($"Eamil {email} already in use.");
+            }
         }
     }
 }
