@@ -141,3 +141,7 @@ D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netc
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.pdb
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.genruntimeconfig.cache
 D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\EmployeeManagement.csproj.CopyComplete
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Administration\EditUsersInRole.cshtml.g.cs
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Account\AccessDenied.cshtml.g.cs
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Administration\ListUsers.cshtml.g.cs
+D:\StudyProjects\DotNetCore\EmployeeManagement\EmployeeManagement\obj\Debug\netcoreapp2.1\Razor\Views\Administration\EditUser.cshtml.g.cs
