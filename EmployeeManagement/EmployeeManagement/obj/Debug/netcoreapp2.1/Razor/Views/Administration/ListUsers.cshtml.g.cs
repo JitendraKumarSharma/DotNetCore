@@ -85,7 +85,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("    ");
             EndContext();
             BeginContext(129, 106, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d21e16a90c40456ead9e1f98b06eb9d4", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8746c172d7b74036a0981dcf6dd1243e", async() => {
                 BeginContext(203, 28, true);
                 WriteLiteral("\r\n        Add New User\r\n    ");
                 EndContext();
@@ -139,12 +139,12 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("\r\n                </h5>\r\n            </div>\r\n            <div class=\"card-footer\">\r\n                ");
             EndContext();
             BeginContext(612, 914, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "abdf87c806534ed695a47cb1bf568ad6", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "fb3d1551ed9f4cdea95c9a8eaf31cad9", async() => {
                 BeginContext(680, 22, true);
                 WriteLiteral("\r\n                    ");
                 EndContext();
                 BeginContext(702, 113, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "47e587ff6b0a43adb64c9397f26af53f", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a416cbf6590540abbdb82fba7f631ff4", async() => {
                     BeginContext(807, 4, true);
                     WriteLiteral("Edit");
                     EndContext();
@@ -284,7 +284,7 @@ else
             ");
             EndContext();
             BeginContext(1846, 122, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f2769e6deb9946f7bbc54427d485f312", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7909238a21ae43f794e51f4e8afa01c8", async() => {
                 BeginContext(1920, 44, true);
                 WriteLiteral("\r\n                Add new user\r\n            ");
                 EndContext();
@@ -321,7 +321,7 @@ else
                 WriteLiteral("\r\n    ");
                 EndContext();
                 BeginContext(2026, 44, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "af9fc83d911e4b06ac50e7a4cd4d2f50", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("script", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4c09a3fd78aa46af8c8974e96b6a1527", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
