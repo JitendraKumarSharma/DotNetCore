@@ -7,6 +7,8 @@ using EmployeeManagement.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Logging;
 
 namespace EmployeeManagement.Controllers
 {
@@ -15,11 +17,14 @@ namespace EmployeeManagement.Controllers
     {
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly UserManager<ApplicationUser> _userManager;
+        private readonly ILogger<AdministrationController> _logger;
 
-        public AdministrationController(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager)
+        public AdministrationController(RoleManager<IdentityRole> roleManager, UserManager<ApplicationUser> userManager,
+            ILogger<AdministrationController> logger)
         {
             _roleManager = roleManager;
             _userManager = userManager;
+            _logger = logger;
         }
 
         [HttpGet]
@@ -190,14 +195,26 @@ namespace EmployeeManagement.Controllers
                 ViewBag.ErrorMessage = $"Role with Id = {id} cannot be found";
                 return View("NotFound");
             }
-            var result = await _roleManager.DeleteAsync(role);
-            if (result.Succeeded)
-                return RedirectToAction("ListRoles");
+            try
+            {
+                var result = await _roleManager.DeleteAsync(role);
+                if (result.Succeeded)
+                    return RedirectToAction("ListRoles");
 
-            foreach (var error in result.Errors)
-                ModelState.AddModelError("", error.Description);
+                foreach (var error in result.Errors)
+                    ModelState.AddModelError("", error.Description);
 
-            return View("ListRoles");
+                return View("ListRoles");
+            }
+            catch (DbUpdateException ex)
+            {
+                _logger.LogError($"Exception occurred : {ex}");
+                ViewBag.ErrorTitle = $"{role.Name} role is in use";
+                ViewBag.ErrorMessage = $"{role.Name} role cannot be deleted as there are users in this role. If you want to delete this role," +
+                    $"please remove the users from this role and then try to delete.";
+                return View("Error");
+            }
+
         }
 
         [HttpGet]
