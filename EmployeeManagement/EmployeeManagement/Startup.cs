@@ -63,6 +63,8 @@ namespace EmployeeManagement
             //});
             #endregion
 
+            services.AddSession();
+
             services.AddMvc(config =>
             {
                 var policy = new AuthorizationPolicyBuilder()
@@ -73,6 +75,20 @@ namespace EmployeeManagement
             services.AddScoped<IEmployeeRepository, SQLEmployeeRepository>();
         }
 
+        private static void ExecuteMiddleware1(IApplicationBuilder app)
+        {
+            app.Run(async context =>
+            {
+                await context.Response.WriteAsync("Execute Middleware 1");
+            });
+        }
+        private static void ExecuteMiddleware2(IApplicationBuilder app)
+        {
+            app.Run(async context =>
+            {
+                await context.Response.WriteAsync("Execute Middleware 2");
+            });
+        }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
@@ -100,7 +116,12 @@ namespace EmployeeManagement
                     //template: "jeet/{controller=Employee}/{action=Index}/{id?}");
                     template: "{controller=Employee}/{action=Index}/{id?}");
             });
-            //app.UseMvc();
+            app.Map("/mapPath1", ExecuteMiddleware1);
+            app.Map("/mapPath2", ExecuteMiddleware2);
+            app.Run(async context =>
+            {
+                await context.Response.WriteAsync("Hello from No Match.");
+            });
         }
     }
 }

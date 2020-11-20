@@ -12,7 +12,7 @@ using Microsoft.Extensions.Logging;
 
 namespace EmployeeManagement.Controllers
 {
-    //[Route("jeet")]
+    //[Route("")]
     //[Route("jeet/[controller]")]
     //[Route("[controller]")]
     public class EmployeeController : Controller
