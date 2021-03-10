@@ -5,9 +5,11 @@ using System.Linq;
 using System.Threading.Tasks;
 using EmployeeManagement.Models;
 using EmployeeManagement.ViewModels;
+using Microsoft.ApplicationInsights.DataContracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
 namespace EmployeeManagement.Controllers
@@ -19,13 +21,15 @@ namespace EmployeeManagement.Controllers
     {
         private readonly IEmployeeRepository _employeeRepository;
         private readonly IHostingEnvironment _hostingEnvironment;
+        private readonly IConfiguration _config;
         private readonly ILogger _logger;
 
-        public EmployeeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment, ILogger<EmployeeController> logger)
+        public EmployeeController(IEmployeeRepository employeeRepository, IHostingEnvironment hostingEnvironment, ILogger<EmployeeController> logger, IConfiguration config)
         {
             _employeeRepository = employeeRepository;
             _hostingEnvironment = hostingEnvironment;
             _logger = logger;
+            _config = config;
         }
 
         public static int fun(int x)
@@ -35,11 +39,17 @@ namespace EmployeeManagement.Controllers
         }
         //[Route("")]
         //[Route("~/")]
-        //[Route("[action]")]
+        //[Route("Index")]
         [AllowAnonymous]
+        [ResponseCache(Duration = 10)]
         public IActionResult Index()
         {
+            string dbConn = _config.GetSection("MySettings").GetSection("DbConnection").Value;
+            string dbConn2 = _config.GetValue<string>("MySettings:DbConnection");
+            //var num = 0;
+            //var dd = 4 / num;
             var emplist = _employeeRepository.GetAllEmployee();
+
             return View(emplist);
         }
         //[Route("[action]/{id?}")]
@@ -54,7 +64,7 @@ namespace EmployeeManagement.Controllers
             _logger.LogError("Error Log");
             _logger.LogCritical("Critical Log");
             Employee employee = _employeeRepository.GetEmployeeById(id.Value);
-            if(employee==null)
+            if (employee == null)
             {
                 Response.StatusCode = 404;
                 return View("EmployeeNotFound", id.Value);
@@ -90,7 +100,7 @@ namespace EmployeeManagement.Controllers
             return View();
         }
 
-        
+
         //[Route("[action]")]
         public ViewResult Edit(int id)
         {
@@ -141,11 +151,11 @@ namespace EmployeeManagement.Controllers
                 {
                     uniqueFileName = Guid.NewGuid().ToString() + "_" + photo.FileName;
                     string filePath = Path.Combine(uploadsFolder, uniqueFileName);
-                    using (var fileStream =new FileStream(filePath,FileMode.Create))
+                    using (var fileStream = new FileStream(filePath, FileMode.Create))
                     {
                         photo.CopyTo(fileStream);
                     }
-                    
+
                 }
             }
             else if (model.Photos != null && model.Photos.Count() == 1)
@@ -156,10 +166,21 @@ namespace EmployeeManagement.Controllers
                 {
                     model.Photos[0].CopyTo(fileStream);
                 }
-               
+
             }
 
             return uniqueFileName;
+        }
+
+        [HttpGet]
+        public string TestHeaders([FromHeader] string Custom)
+        {
+            string token = string.Empty;
+            if (!string.IsNullOrEmpty(Custom))
+            {
+                token = Custom;
+            }
+            return token;
         }
     }
 }

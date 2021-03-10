@@ -94,7 +94,7 @@ using Microsoft.AspNetCore.Identity;
             WriteLiteral("</h3>\r\n            </div>\r\n            ");
             EndContext();
             BeginContext(481, 86, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "fae0692f3c8e478bb671852952436731", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("img", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "47465718b31a4eed84baf8d19d1e934e", async() => {
             }
             );
             __Microsoft_AspNetCore_Mvc_TagHelpers_ImageTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.TagHelpers.ImageTagHelper>();
@@ -138,7 +138,7 @@ WriteAttributeValue("", 663, emp.Id, 663, 7, false);
             WriteLiteral(">display</a>\r\n                ");
             EndContext();
             BeginContext(701, 105, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "30dc88d1cccd484191f6945aef4d99c5", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "63f81981e6204dcbba6652aa5d0d3819", async() => {
                 BeginContext(798, 4, true);
                 WriteLiteral("View");
                 EndContext();
@@ -176,7 +176,7 @@ WriteAttributeValue("", 663, emp.Id, 663, 7, false);
             WriteLiteral("\r\n                ");
             EndContext();
             BeginContext(824, 102, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "8d2411c125ab4494a9587be3522d8af8", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "60b6fb3522b34d3794ae378dd16c723e", async() => {
                 BeginContext(918, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
